@@ -1,4 +1,5 @@
-# The Complete Web Developer's Course 2.0
+# [The Complete Web Developer's Course 2.0](https://www.udemy.com/the-complete-web-developer-course-2/learn/v4/content)
+#### Teacher: Rob Percival
 
 ## Section 1 - HTML
 
