@@ -1,0 +1,58 @@
+Background color {
+  #FFFFFF;
+}
+
+Top bar {
+  text: #333333;
+  lines: #CCCCCC;
+  search box: #E4E4E4;
+}
+
+Top bar:hover {
+  sign in line hover colour: #1188BB;
+  news line hover colour: #992211;
+  sport line hover colour: #FFEE11;
+  weather line hover colour: #88CCEE;
+  shop line hover colour: #2897E5;
+  earth line hover colour: #262626;
+  travel line hover colour: #262626;
+  more line hover colour: #262626;
+}
+
+bbc bar {
+  background-color: #BB1919;
+  underneath background-colour: #A91717;
+  text: #F6D3D3;
+  lines: #FF0000;
+}
+
+Red bit active link {
+  line under the world bit: #FFFFFF;
+}
+
+World line {
+  Text for 'World': #222222;
+  Text for regions: #222222;
+}
+
+Headings {
+  hover colour: #1167A8;
+  Text colour: #222222;
+  caption colour: #5A5A5A;
+  country colour: #a61b1b;
+}
+
+font awesome
+Video arrow {
+  caret right: http://fontawesome.io/icon/caret-right/
+  fa fa-caret-right
+}
+
+caret down {
+
+}
+
+clock {
+  http://fontawesome.io/icon/clock-o/
+  fa fa-clock-o
+}
