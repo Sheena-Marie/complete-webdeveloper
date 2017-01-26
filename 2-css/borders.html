@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Borders</title>
+    <style media="screen" type="text/css">
+    /* These two things at the top of your css will set the defaults for ALL BROWSERS. This will stop those annoying white gaps that keep coming up. */
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* We now return you to your regular CSS */
+
+    /*
+    3 Squares, 100px wide 100px high.
+    Red
+    Blue
+    Green
+    */
+
+    #red {
+      background-color: #801515;
+      border: 10px #003333 solid;
+    }
+
+    #blue {
+      background-color: #669999;
+      border-style: ridge solid dotted dashed;
+      border-color: #550000 #801515 #D46A6A #AA3939;
+      border-width: 10px 5px 2px 1px;
+    }
+
+    #green {
+      background-color: #116611;
+      border-radius: 50%;
+      /*border-radius: 50px;*/
+    }
+
+    .square {
+      width: 100px;
+      height: 100px;
+      margin: 40px;
+      float: left;
+    }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div id="red" class="square">
+    </div>
+
+    <div id="blue" class="square">
+    </div>
+
+    <div id="green" class="square">
+    </div>
+
+  </body>
+</html>
