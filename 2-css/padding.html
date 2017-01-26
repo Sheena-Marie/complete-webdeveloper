@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Margins</title>
+    <title>Padding</title>
     <style media="screen" type="text/css">
 
     .red {
@@ -21,26 +21,25 @@
       color: blue;
       background-color: #CD88AF;
       width: 200px;
-      position: relative;
-       /*Margins go Clockwise starting from the top. Top, Right, Bottom, Left*/
-      margin: 100px 50px 20px 100px;
-      /*margin-left: 150px;*/
-      float: left;
+      margin-left: 150px;
     }
 
     .second-section {
       background-color: #D4EE9F;
       width: 400px;
-      float: left;
-      /*margin: 50px 20px; <-- Solution One*/
-      margin: 50px 20px 50px 20px; /*<-- Solution Two */
-      /*
-      margin-left: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin-right: 20px;
-      Solution Three */
+      padding: 5px 10px 15px 20px;
+    }
 
+    /* These two things at the top of your css will set the defaults for ALL BROWSERS. This will stop those annoying white gaps that keep coming up. */
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
     }
 
     </style>
