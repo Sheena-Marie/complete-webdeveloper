@@ -8,3 +8,5 @@ Breezing through this section as it's all review for me and I might pick up some
 Completed HTML CCA test and completeled the HTML challenge
 
 ## Section 2 - CSS
+
+A lot of this is also review for me, although I'm sure I'm going to learn some new stuff here. I did for the HTML stuff.
