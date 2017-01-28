@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
 
     <title>Australia - BBC News</title>
@@ -13,275 +14,317 @@
     <!-- Styles -->
 
     <style media="screen" type="text/css">
+        /* Setting up the standards for the page */
 
-    /* Setting up the standards for the page */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            font-family: 'Cantarell', sans-serif;
+        }
 
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #FFFFFF;
-        font-family: 'Cantarell', sans-serif;
-      }
+        p {
+            margin: 0;
+            padding: 0;
+        }
+        /* We now return to your regularly scheduled CSS */
+        /* Top Navigation Bar */
 
-      p {
-        margin: 0;
-        padding: 0;
-      }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-      /* We now return to your regularly scheduled CSS */
+        li {
+            display: inline;
+        }
 
-      /* Top Navigation Bar */
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+        .bbc-image {
+            padding-right: 5px;
+            padding-left: 5px;
+            align-items: center;
+        }
 
-      li {
-        display: inline;
-      }
+        .bbc-image:hover {
+            cursor: pointer;
+        }
 
-      .bbc-image {
-        padding-right: 5px;
-        padding-left: 5px;
-        align-items: center;
-      }
+        .top-bar {
+            padding-top: 6px;
+            padding-bottom: 9px;
+            color: #333333;
+            height: 22.5px;
+            vertical-align: middle;
+            padding-left: 8%;
+            font-size: 14px;
+        }
 
-      .bbc-image:hover {
-        cursor: pointer;
-      }
+        .sign-in {
+            font-weight: bold;
+            padding-left: 15px;
+            padding-right: 55px;
+            font-size: 90%;
+            border-right: 1px solid #CCCCCC;
+            border-left: 1px solid #CCCCCC;
+        }
 
-      .top-bar {
-        padding-top: 6px;
-        padding-bottom: 9px;
-        color: #333333;
-        height: 22.5px;
-        vertical-align: middle;
-        padding-left: 8%;
-        font-size: 14px;
-      }
+        .sign-in:hover {
+            border-bottom: 5px solid #1188BB;
+            cursor: pointer;
+        }
 
-      .sign-in {
-        font-weight: bold;
-        padding-left: 15px;
-        padding-right: 55px;
-        font-size: 90%;
-        border-right: 1px solid #CCCCCC;
-        border-left: 1px solid #CCCCCC;
-      }
+        .top-gen {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-right: 1px solid #CCCCCC;
+        }
 
-      .sign-in:hover {
-        border-bottom: 5px solid #1188BB;
-        cursor: pointer;
-      }
+        .news:hover {
+            border-bottom: 5px solid #992211;
+            cursor: pointer;
+        }
 
-      .top-gen {
-        padding-left: 5px;
-        padding-right: 5px;
-        border-right: 1px solid #CCCCCC;
-      }
+        .sport:hover {
+            border-bottom: 5px solid #FFEE11;
+            cursor: pointer;
+        }
 
-      .news:hover {
-        border-bottom: 5px solid #992211;
-        cursor: pointer;
-      }
+        .weather:hover {
+            border-bottom: 5px solid #88CCEE;
+            cursor: pointer;
+        }
 
-      .sport:hover {
-        border-bottom: 5px solid #FFEE11;
-        cursor: pointer;
-      }
+        .shop:hover {
+            border-bottom: 5px solid #2897E5;
+            cursor: pointer;
+        }
 
-      .weather:hover {
-        border-bottom: 5px solid #88CCEE;
-        cursor: pointer;
-      }
+        .top3:hover {
+            border-bottom: 5px solid #262626;
+        }
 
-      .shop:hover {
-        border-bottom: 5px solid #2897E5;
-        cursor: pointer;
-      }
+        .more {
+            padding-left: 5px;
+            padding-right: 40px;
+        }
 
-      .top3:hover {
-        border-bottom: 5px solid #262626;
-      }
+        .more-right {
+            padding-left: 30px;
+            padding-right: 10px;
+            border-right: 1px solid #CCCCCC;
+        }
 
-      .more {
-        padding-left: 5px;
-        padding-right: 40px;
-      }
+        .search {
+            background-color: #E4E4E4;
+            padding-left: 5px;
+            padding-right: 180px;
+        }
 
-      .more-right {
-        padding-left: 30px;
-        padding-right: 10px;
-        border-right: 1px solid #CCCCCC;
-      }
+        .search2 {
+            background-color: #E4E4E4;
+            padding-right: 5px;
+        }
+        /* News Header */
 
-      .search {
-        background-color: #E4E4E4;
-        padding-left: 5px;
-        padding-right: 180px;
-      }
+        .red-news {
+            background-color: #BB1919;
+            font-size: 20px;
+            padding-left: 14.8%;
+            vertical-align: middle;
+        }
 
-      .search2 {
-        background-color: #E4E4E4;
-        padding-right: 5px;
-      }
+        .newstext {
+            color: #FFFFFF;
+            font-size: 200%;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
 
-      /* News Header */
+        .newstext:hover {
+            cursor: pointer;
+        }
+        /* News Navigation */
 
-      .red-news {
-        background-color: #BB1919;
-        font-size: 20px;
-        padding-left: 14.8%;
-        vertical-align: middle;
-      }
+        .news-nav {
+            color: #FFFFFF;
+            background-color: #A91717;
+            height: 24px;
+            width: auto;
+            vertical-align: middle;
+            padding-left: 15.3%;
+            padding-top: 6px;
+            font-size: 14px;
+        }
 
-      .newstext {
-        color: #FFFFFF;
-        font-size: 200%;
-        padding-left: 5px;
-        padding-top: 5px;
-      }
+        .home-nav {
+            padding-right: 8px;
+            border-right: 1px #BB1919 solid;
+        }
 
-      .newstext:hover {
-        cursor: pointer;
-      }
+        .home-nav:hover {
+            border-bottom: 5px solid #FFFFFF;
+            cursor: pointer;
+        }
 
-      /* News Navigation */
-      .news-nav {
-        color: #FFFFFF;
-        background-color: #A91717;
-        height: 24px;
-        width:auto;
-        vertical-align: middle;
-        padding-left: 15.3%;
-        padding-top: 6px;
-        font-size: 14px;
-      }
+        .nav {
+            padding-left: 8px;
+            padding-right: 8px;
+            border-right: 1px #bb4545 solid;
+        }
 
-      .home-nav {
-        padding-right: 8px;
-        border-right: 1px #BB1919 solid;
-      }
+        .nav-world {
+            padding-left: 8px;
+            padding-right: 8px;
+            border-right: 1px #bb4545 solid;
+            border-bottom: 5px solid #FFFFFF;
+        }
 
-      .home-nav:hover {
-        border-bottom: 5px solid #FFFFFF;
-        cursor: pointer;
-      }
+        .nav-world:hover {
+            cursor: pointer;
+        }
 
-      .nav {
-        padding-left: 8px;
-        padding-right: 8px;
-        border-right: 1px #bb4545 solid;
-      }
+        .nav:hover {
+            border-bottom: 5px solid #FFFFFF;
+            cursor: pointer;
+        }
 
-      .nav-world {
-        padding-left: 8px;
-        padding-right: 8px;
-        border-right: 1px #bb4545 solid;
-        border-bottom: 5px solid #FFFFFF;
-      }
+        .more-nav {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
 
-      .nav-world:hover {
-        cursor: pointer;
-      }
+        .more-nav:hover {
+            padding-top: 6px;
+            padding-bottom: 4.7px;
+            background: #000000;
+            cursor: pointer;
+        }
+        /* 3rd World Navigation Bar */
 
-      .nav:hover {
-        border-bottom: 5px solid #FFFFFF;
-        cursor: pointer;
-      }
+        .world-nav {
+            padding-left: 15.3%;
+            cursor: pointer;
+        }
 
-      .more-nav {
-        padding-left: 8px;
-        padding-right: 8px;
-      }
+        .world {
+            font-size: 20px;
+            padding-right: 10px;
+            border-right: 1px #CCCCCC solid;
+        }
 
-      .more-nav:hover {
-        padding-top: 6px;
-        padding-bottom: 4.7px;
-        background: #000000;
-        cursor: pointer;
-      }
+        .world:hover {
+            border-bottom: 5px #BB1919 solid;
+        }
 
+        .world-nav-li {
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: 1px #CCCCCC solid;
+        }
+
+        .world-nav-li:hover {
+            border-bottom: 5px #BB1919 solid;
+        }
+
+        .australia {
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: 1px #CCCCCC solid;
+            border-bottom: 5px #BB1919 solid;
+        }
+
+        .us-can {
+            padding-left: 10px;
+        }
+
+        .us-can:hover {
+            border-bottom: 5px #BB1919 solid;
+        }
+
+        
     </style>
 
-  </head>
-  <body>
+</head>
 
-  <!-- Top Navigation Bar -->
-  <div class="top-bar">
-    <ul>
+<body>
 
-      <li class="bbc-image top-bar">
-        <img src="bbc-blocks-dark.png" alt="BBC" id="bbc-image">
-      </li>
+    <!-- Top Navigation Bar -->
+    <div class="top-bar">
+        <ul>
 
-      <li class="sign-in">
-        <i class="fa fa-user-circle"></i>
-        Sign In
-      </li>
+            <li class="bbc-image top-bar">
+                <img src="bbc-blocks-dark.png" alt="BBC" id="bbc-image">
+            </li>
 
-      <li class="top-gen news">
-        News
-      </li>
+            <li class="sign-in">
+                <i class="fa fa-user-circle"></i> Sign In
+            </li>
 
-      <li class="top-gen sport">
-        Sport
-      </li>
+            <li class="top-gen news">News</li>
 
-      <li class="top-gen weather">
-        Weather
-      </li>
+            <li class="top-gen sport">Sport</li>
 
-      <li class="top-gen shop">
-        Shop
-      </li>
-      <li class="top3 top-gen">
-        Earth
-      </li>
-      <li class="top3 top-gen">
-        Travel
-      </li>
+            <li class="top-gen weather">Weather</li>
 
-      <span class="top3">
-        <li class="more">More</li>
-        <li>
-          <i class="fa fa-caret-down more-right"></i>
-        </li>
-      </span>
+            <li class="top-gen shop">Shop</li>
 
-      <li class="search">
-         Search
-      </li>
-      <li class="search2">
-        <i class="fa fa-search"></i>
-      </li>
-  </div>
+            <li class="top3 top-gen">Earth</li>
 
-  <!-- News Header -->
-  <div class="red-news">
-    <p class="newstext">NEWS</p>
-  </div>
+            <li class="top3 top-gen">Travel</li>
 
-  <!-- News Navigation Bar -->
+            <span class="top3">
+              <li class="more">More</li>
 
-  <div class="news-nav">
-    <ul>
-      <li class="home-nav">Home</li>
-      <li class="nav">Video</li>
-      <li class="nav-world">World</li>
-      <li class="nav">Asia</li>
-      <li class="nav">UK</li>
-      <li class="nav">Business</li>
-      <li class="nav">Tech</li>
-      <li class="nav">Science</li>
-      <li class="nav">Magazine</li>
-      <li class="nav">Entertainment & Arts</li>
-      <li class="nav">Health</li>
-      <li class="nav">World News TV</li>
-      <li class="more-nav">More <i class="fa fa-caret-down"></i></li>
-    </ul>
-  </div>
+              <li>
+              <i class="fa fa-caret-down more-right"></i>
+              </li>
+            </span>
 
-  </body>
+            <li class="search">Search</li>
+
+            <li class="search2">
+                <i class="fa fa-search"></i>
+            </li>
+    </div>
+
+    <!-- News Header -->
+    <div class="red-news">
+        <p class="newstext">NEWS</p>
+    </div>
+
+    <!-- News Navigation Bar -->
+
+    <div class="news-nav">
+        <ul>
+            <li class="home-nav">Home</li>
+            <li class="nav">Video</li>
+            <li class="nav-world">World</li>
+            <li class="nav">Asia</li>
+            <li class="nav">UK</li>
+            <li class="nav">Business</li>
+            <li class="nav">Tech</li>
+            <li class="nav">Science</li>
+            <li class="nav">Magazine</li>
+            <li class="nav">Entertainment & Arts</li>
+            <li class="nav">Health</li>
+            <li class="nav">World News TV</li>
+            <li class="more-nav">More <i class="fa fa-caret-down"></i></li>
+        </ul>
+    </div>
+
+    <div class="world-nav">
+        <ul>
+            <li class="world">World</li>
+            <li class="world-nav-li">Africa</li>
+            <li class="australia">Australia</li>
+            <li class="world-nav-li">Europe</li>
+            <li class="world-nav-li">Latin America</li>
+            <li class="world-nav-li">Middle East</li>
+            <li class="us-can">US & Canada</li>
+        </ul>
+    </div>
+
+</body>
+
 </html>
