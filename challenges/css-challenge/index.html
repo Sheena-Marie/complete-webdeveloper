@@ -143,11 +143,16 @@
         padding-top: 5px;
       }
 
+      .newstext:hover {
+        cursor: pointer;
+      }
+
       /* News Navigation */
       .news-nav {
         color: #FFFFFF;
         background-color: #A91717;
         height: 24px;
+        width:auto;
         vertical-align: middle;
         padding-left: 15.3%;
         padding-top: 6px;
@@ -161,23 +166,41 @@
 
       .home-nav:hover {
         border-bottom: 5px solid #FFFFFF;
+        cursor: pointer;
       }
 
       .nav {
         padding-left: 8px;
         padding-right: 8px;
-        border-right: 1px #BB1919 solid;
+        border-right: 1px #bb4545 solid;
       }
 
       .nav-world {
         padding-left: 8px;
         padding-right: 8px;
-        border-right: 1px #BB1919 solid;
+        border-right: 1px #bb4545 solid;
         border-bottom: 5px solid #FFFFFF;
+      }
+
+      .nav-world:hover {
+        cursor: pointer;
       }
 
       .nav:hover {
         border-bottom: 5px solid #FFFFFF;
+        cursor: pointer;
+      }
+
+      .more-nav {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .more-nav:hover {
+        padding-top: 6px;
+        padding-bottom: 4.7px;
+        background: #000000;
+        cursor: pointer;
       }
 
     </style>
@@ -256,7 +279,7 @@
       <li class="nav">Entertainment & Arts</li>
       <li class="nav">Health</li>
       <li class="nav">World News TV</li>
-      <li>More</li>
+      <li class="more-nav">More <i class="fa fa-caret-down"></i></li>
     </ul>
   </div>
 
