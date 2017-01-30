@@ -241,7 +241,6 @@
         .us-can:hover {
             border-bottom: 5px #BB1919 solid;
         }
-
         /* I'm off the nav bars, FINALLY!! This is the main body of the BBC clone*/
 
         .bbc-body {
@@ -249,7 +248,6 @@
             margin-top: 2%;
             margin-right: 15.3%;
         }
-
         /* first advert */
 
         .ad1 {
@@ -260,15 +258,15 @@
         .ad1-img {
             padding-left: 9%;
         }
-
         /* Side with the main article */
+
         .side-1 {
-          width: 65%;
-          float: left;
-          padding-right: 15px;
-          padding-bottom: 15px;
-          /*border-right: 1px #CCCCCC solid;*/
-          border-bottom: 1px #CCCCCC solid;
+            width: 65%;
+            float: left;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            /*border-right: 1px #CCCCCC solid;*/
+            border-bottom: 1px #CCCCCC solid;
         }
 
         .side1-cap {
@@ -290,7 +288,7 @@
         }
 
         .location-sub {
-          color: #992211;
+            color: #992211;
         }
 
         .posted {
@@ -298,6 +296,7 @@
         }
 
         .side-2 {
+            float: right;
             padding-top: 4%;
             text-align: right;
         }
@@ -306,6 +305,12 @@
             font-size: 70%;
         }
 
+        .small-section {
+            z-index: 1;
+            float: left;
+            padding-top: 20px;
+            padding-left: 12%;
+        }
 
     </style>
 
@@ -391,47 +396,47 @@
 
     <div class="bbc-body">
 
-            <p class="ad1">ADVERTISEMENT</p>
-            <img src="advertisment.png" alt="advertisement" class="ad1-img">
+        <p class="ad1">ADVERTISEMENT</p>
+        <img src="advertisment.png" alt="advertisement" class="ad1-img">
 
-            <div class="side-1">
+        <div class="side-1">
+
+            <div class="big-art">
 
                 <h1>Minister Rebukes Australia Day Critics</h1>
 
                 <div class="side1-cap">
 
-                  <p class="sub">
-                    The deputy PM says people wanting to change the event's date should "Crawl under a rock".
-                  </p>
-
-                <div class="small-text">
-
-                    <p>
-
-                      <span class="posted">
-                      <i class="fa fa-clock-o" aria-hidden="true"></i> 3 hours ago | </span>
-                      <span class="location-sub"> Australia </span>
-
+                    <p class="sub">
+                        The deputy PM says people wanting to change the event's date should "Crawl under a rock".
                     </p>
 
-                </div>
+                    <div class="small-text">
 
+                        <p>
+
+                            <span class="posted">
+                          <i class="fa fa-clock-o" aria-hidden="true"></i> 3 hours ago | </span>
+                            <span class="location-sub"> Australia </span>
+
+                        </p>
+
+                    </div>
                 </div>
 
                 <img src="aus-day.png" alt="Australia Day Picture" class="side1-img">
 
             </div>
 
-            <div class="side-2">
+        </div>
 
-                <p class="add-text">ADVERTISEMENT</p>
+        <div class="side-2">
 
-                <img src="add2.png" alt="NAB">
+            <p class="add-text">ADVERTISEMENT</p>
 
-            </div>
+            <img src="add2.png" alt="NAB">
 
-
-
+        </div>
     </div>
 
 </body>
