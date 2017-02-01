@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BBC Clone - Rob Code Along</title>
+
+    <style media="screen" type="text/css">
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    #topbar {
+      width: 1000px;
+      margin: 0 auto;
+      height: 40px;
+    }
+
+    #logo {
+      margin-top: 8px;
+      width: 100px;
+      float: left;
+      margin-right: 8px;
+    }
+
+    .topbar-section {
+      float: left;
+      border-left: 1px #CCCCCC solid;
+      height: 100%;
+    }
+
+    #signin-image {
+      width: 35px;
+      margin: 10px 13px;
+      float: left;
+    }
+
+    #signin-text {
+      font-weight: bold;
+      font-size: 90%;
+      position: relative;
+      top: 15px;
+      padding-right: 50px;
+    }
+
+    #wiggly-line {
+      float: left;
+      height: 40px;
+    }
+
+    #bell {
+      height: 30px;
+      margin: 9px 8px;
+    }
+
+    #bell-div {
+      float: left;
+    }
+
+    .topbar-menu {
+      font-weight: bold;
+      font-size: 90%;
+      padding: 13px 15px 0 15px;
+      height: 27px;
+    }
+
+    #more-arrow {
+      width: 16px;
+      margin-left: 20px;
+    }
+
+    #search-box {
+      background-color: #E4E4E4;
+      border: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 5px;
+      margin: 5px 0 5px 5px;
+      float: left;
+    }
+
+    #glass {
+      height: 27px;
+      margin-top: 5px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="topbar">
+      <img src="images/bbc-logo.png" id="logo">
+
+      <div id="signin-div" class="topbar-section">
+
+        <img src="images/signin-image.png" id="signin-image">
+
+        <span id="signin-text">Sign in</span>
+
+      </div>
+
+      <div id="bell-div">
+
+        <img src="images/squiggly.png" id="wiggly-line">
+
+        <img src="images/bell.png" id="bell">
+
+      </div>
+
+      <div class="topbar-section topbar-menu">
+        News
+      </div>
+
+      <div class="topbar-section topbar-menu">
+        Sport
+      </div>
+
+      <div class="topbar-section topbar-menu">
+        Weather
+      </div>
+
+      <div class="topbar-section topbar-menu">
+        TV
+      </div>
+
+      <div class="topbar-section topbar-menu">
+        More
+
+        <img src="images/downarrow.png" id="more-arrow">
+      </div>
+
+      <div class="topbar-section">
+        <input type="text" id="search-box" value="Search">
+
+        <input type="image" src="images/glass.png" id="glass">
+      </div>
+
+    </div>
+
+
+
+  </body>
+</html>
