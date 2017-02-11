@@ -3,8 +3,76 @@
   <head>
     <meta charset="utf-8">
     <title>Disappearing Circles</title>
+
+    <style media="screen" type="text/css">
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .circle {
+      height: 50px;
+      width: 50px;
+      margin-left: 20px;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+
+    #red {
+      background-color: #FF8F8F;
+    }
+
+    #blue {
+      background-color: #74D0D0;
+    }
+
+    #yellow {
+      background-color: #E2FBB0;
+    }
+
+
+
+    </style>
   </head>
   <body>
+
+    <!-- Create a red, blue and yellow circle. Any time that the circle is clicked, it disappears -->
+
+    <p id="red" class="circle"></p>
+
+    <p id="blue" class="circle"></p>
+
+    <p id="yellow" class="circle"></p>
+
+
+
+    <script type="text/javascript">
+
+    // Red circle disappearing
+
+    document.getElementById('red').onclick = function() {
+      document.getElementById('red').style.display = "none";
+    }
+
+    // Blue Circle disappearing
+
+    document.getElementById('blue').onclick = function() {
+      document.getElementById('blue').style.display = "none";
+    }
+
+    // Yellow circle disappearing
+
+    document.getElementById('yellow').onclick = function() {
+      document.getElementById('yellow').style.display = "none";
+    }
+
+    </script>
 
   </body>
 </html>
