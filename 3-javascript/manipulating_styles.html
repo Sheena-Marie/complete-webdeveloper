@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulating Styles</title>
+  </head>
+  <body>
+
+    <p id="text">Hello World!</p>
+
+    <button id="myButton">Change Text</button>
+
+    <p id="secondParagraph">Javascript is ... </p>
+
+    <button id="secondButton">Change more text!</button>
+
+    <button id="magicButton">Click Me for MAGIC!</button>
+
+    <p id="magicText"></p>
+
+    <!-- Start of this exercise -->
+
+    <p id="moreText">This is some text</p>
+
+    <button id="styleText">Style Text</button>
+
+    <script type="text/javascript">
+
+      document.getElementById('myButton').onclick = function () {
+        document.getElementById('text').innerHTML = 'Hello Sheena!';
+      }
+
+      document.getElementById('secondButton').onclick = function () {
+        document.getElementById('secondParagraph').innerHTML = 'I think ' + document.getElementById('secondParagraph').innerHTML + 'awesome, maybe...';
+        //taking inner html of secondParagraph and setting it equal to the innerHTML of secondParagraph and adding awesome to it.
+      }
+
+      document.getElementById('magicButton').onclick = function () {
+        document.getElementById('magicText').innerHTML = 'This is magically appearing text';
+      }
+
+      // Start of the Exercise.
+
+      document.getElementById('styleText').onclick = function() {
+        document.getElementById('moreText').style.display = "none";
+      }
+
+    </script>
+
+  </body>
+</html>
