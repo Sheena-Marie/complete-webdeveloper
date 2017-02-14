@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How Many Fingers Game</title>
+
+    <!-- bootstrapcdn -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style media="screen" type="text/css">
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="center-block">
+              <h3 class="text-center">How many fingers am I holding up?</h3>
+
+              <p>
+                <input type="text" id="fingers" placeholder="How Many Fingers?" class="form-control">
+              </p>
+
+              <p class="text-center">
+                <button id="checkFingers" class="btn btn-info">Guess</button>
+              </p>
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Javascript -->
+
+    <script type="text/javascript">
+
+    document.getElementById('checkFingers').onclick = function () {
+      var howManyFingers = document.getElementById('fingers').value;
+
+      console.log(howManyFingers);
+
+      var randomNumber = Math.floor((Math.random() * 5) +1);
+
+      console.log(randomNumber);
+
+      if (howManyFingers == randomNumber) {
+        alert("You guessed right!");
+      } else {
+        alert("Try again!");
+      }
+    }
+
+    </script>
+
+  </body>
+</html>
