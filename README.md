@@ -21,4 +21,17 @@ A lot of this is also review for me, although I'm sure I'm going to learn some n
 
 Clone the BBC News website using CSS.
 
-[Page can be found here]()
+[Page can be found here](http://79.170.44.122/sheena-bbc-clone.com/)
+
+
+### Mini Challenges
+
+#### Challenge 1 - Disappearing circles
+
+Create three circle and that disappear when clicked on.
+
+#### Challenge 2 - How Many Fingers?
+
+Create a small game where a person has to enter a number between 1 and 5.
+
+[Game can be found here](http://bit.ly/2lFngGI)
