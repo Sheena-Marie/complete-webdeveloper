@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>While Loops</title>
+  </head>
+  <body>
+
+
+    <!-- <div id="tweet"></div> -->
+
+    <p>How many fingers are you holding up?</p>
+
+    <p>
+      <select id="myNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+
+    <!-- <p><input type="text" id="myNumber"></p> -->
+
+      <button id="guess">Guess!</button>
+    </p>
+
+    <script type="text/javascript">
+
+    // FOR LOOPS
+
+    // var tweetString = "";
+    //
+    // var tweets = ["Hi everyone!", "I love cornflakes!", "Night night :)", "sweet dreams!"];
+    //
+    // for (i = 0; i < tweets.length; i++) {
+    //
+    //   tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+    //
+    // }
+    //
+    // document.getElementById('tweet').innerHTML = tweetString;
+
+    // WHILE LOOPS
+
+    // var i = 0;
+
+    // while(i < tweets.length) {
+
+      // tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+      // i++;
+    // }
+
+    // document.getElementById('tweet').innerHTML = tweetString;
+
+    document.getElementById('guess').onclick = function() {
+
+      var myNumber = document.getElementById('myNumber').value;
+
+      var gotIt = false;
+
+      var numberOfGuesses = 1;
+
+      while (gotIt == false) {
+
+        var guess = Math.random();
+
+        guess = guess * 6;
+
+        guess = Math.floor(guess);
+
+        if (guess == myNumber) {
+          gotIt = true;
+
+          alert("Got it! It was a " + guess + ". It took me " + numberOfGuesses + " guesses");
+        } else {
+          numberOfGuesses++;
+        }
+      }
+    }
+
+
+    </script>
+
+  </body>
+</html>
