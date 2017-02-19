@@ -34,13 +34,13 @@ Create a small game where a person can test their reactions by clicking on rando
 I coded along with Rob for this one as I wasn't quite sure how to do some of the elements of this challenge. I will come back at a later date and try my hand at this one myself.
 
 
-### Mini Challenges
+## Mini Challenges
 
-#### Challenge 1 - Disappearing circles
+#### Challenge 1 - Disappearing circles(Javascript)
 
 Create three circle and that disappear when clicked on.
 
-#### Challenge 2 - How Many Fingers?
+#### Challenge 2 - How Many Fingers? (Javascript)
 
 Create a small game where a person has to enter a number between 1 and 5.
 
