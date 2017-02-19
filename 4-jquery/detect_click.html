@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Detecting Clicks</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.1.1.min.js"></script>
+
+    <style type="text/css">
+        #green-circle {
+            height: 150px;
+            width: 150px;
+            background-color: #116611;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        .red-square {
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+
+        #one {
+            background-color: #801515;
+        }
+
+        #two {
+            background-color: #AA3939;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- green circle, 2 red squares -->
+
+    <div id="green-circle"></div>
+    <div class="red-square" id="one"></div>
+    <div class="red-square" id="two"></div>
+
+    <script type="text/javascript">
+
+        $('#green-circle').click(function() {
+            alert('circle was clicked');
+        });
+
+        $('.red-square').click(function() {
+            alert('red square was clicked');
+        });
+
+        $('div').click(function() {
+            alert('a div was clicked');
+        });
+    </script>
+
+</body>
+
+</html>
