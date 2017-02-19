@@ -17,15 +17,15 @@ Create a website using basic HTML following the specifications laid out in the v
 
 A lot of this is also review for me, although I'm sure I'm going to learn some new stuff here. I did for the HTML stuff.
 
-## Section 3 - Javascript
-
-A bit of a love/hate relationship with this language. I understand more of it now, but still need a lot of work with it.
-
 ### Challenge 2 - BBC Clone
 
 Clone the BBC News website using CSS.
 
 [Page can be found here](http://79.170.44.122/sheena-bbc-clone.com/)
+
+## Section 3 - Javascript
+
+A bit of a love/hate relationship with this language. I understand more of it now, but still need a lot of work with it.
 
 ### Challenge 3 - Reaction Tester
 
