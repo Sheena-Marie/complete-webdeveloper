@@ -17,6 +17,10 @@ Create a website using basic HTML following the specifications laid out in the v
 
 A lot of this is also review for me, although I'm sure I'm going to learn some new stuff here. I did for the HTML stuff.
 
+## Section 3 - Javascript
+
+A bit of a love/hate relationship with this language. I understand more of it now, but still need a lot of work with it.
+
 ### Challenge 2 - BBC Clone
 
 Clone the BBC News website using CSS.
@@ -35,3 +39,9 @@ Create three circle and that disappear when clicked on.
 Create a small game where a person has to enter a number between 1 and 5.
 
 [Game can be found here](http://bit.ly/2lFngGI)
+
+### Challenge 3 - Reaction Tester
+
+Create a small game where a person can test their reactions by clicking on randomly generated circles and squares.
+
+I coded along with Rob for this one as I wasn't quite sure how to do some of the elements of this challenge. I will come back at a later date and try my hand at this one myself.
