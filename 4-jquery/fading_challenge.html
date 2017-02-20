@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Changing Content</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.1.1.min.js"></script>
+
+    <style type="text/css">
+        #rob-hide {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+  <!-- Create a paragraph with some text and a button.
+
+When the button is pressed, the paragraph fades out. -->
+
+    <p id="fade">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <button id="button">Click me for fade out!</button>
+
+    <hr>
+
+    <!-- Text that is initially hidden, but when a button is pushed, the text fades in. -->
+
+    <p id="hidden"></p>
+    <button id="appear">Click me for MAGIC!!</button>
+
+    <hr>
+
+    <p id="rob-hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button id="rob-button">Clicky Clicky!</button>
+
+    <hr>
+
+
+    <!-- Just one paragraph. Have a toggle button that fades things in and out. -->
+
+    <p id="toggle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button id="toggleButton">Toggle me!</button>
+
+    <hr>
+
+    <p id="robToggle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <button id="robToggleButton">Click Me!</button>
+
+
+    <script type="text/javascript">
+
+        $('#button').click(function() {
+            $('#fade').fadeOut('slow', function() {
+              alert('It worked!');
+            });
+        });
+
+        $('#appear').click(function() {
+            $('#hidden').fadeIn('slow', function() {
+                $('#hidden').html('Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+            });
+        });
+
+        // Rob Code along
+        $('#rob-button').click(function() {
+            $('#rob-hide').fadeIn('slow');
+        });
+
+        // Toggle button
+        $('#toggleButton').click(function() {
+            $('#toggle').fadeToggle('slow');
+        });
+
+        // Rob code along
+
+        $('#robToggleButton').click(function() {
+            if ($('#robToggle').css('display') == 'none') {
+                $('#robToggle').fadeIn();
+            } else {
+                $('#robToggle').fadeOut();
+            }
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
