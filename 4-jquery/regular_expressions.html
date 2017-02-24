@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Regular Expressions</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+
+
+
+  <script type="text/javascript">
+
+    // Define Regular expression
+    var regex = /e/g;
+    //to check for the word is, put the 'is' inside the slashes
+    // To make the search case insensitive, put an 'i' after the final slash /Great!/i;
+
+    var string = 'Regex is great!';
+
+    var result = string.match(regex);
+    // does the word 'is' appear in the string
+
+    alert(result);
+  </script>
+
+  </body>
+</html>
