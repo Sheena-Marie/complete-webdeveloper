@@ -8,6 +8,8 @@
     <!-- jQuery -->
     <script src="../../../4-jquery/jquery-3.1.1.min.js"></script>
 
+    </script>
+
     <style type="text/css">
         body {
             font-family: helvetica, sans-serif;
@@ -101,7 +103,7 @@
 
     </div>
 
-
+    </script>
 
 
     <!-- jQuery/Javascript -->
@@ -127,6 +129,7 @@
 
         $('#submitButton').click(function() {
 
+            // checking for missing fields
             if ($('#email').val() == "") {
                 fieldsMissing += "<br>Email";
             }
@@ -147,6 +150,7 @@
                 fieldsMissing += '<br>Password Confirmation';
             }
 
+            // Checking to make sure that everything is correct
             if(isEmail($('#email').val()) == false) {
                 errorMessage += '<p>Your email address is not valid</p>';
             };
