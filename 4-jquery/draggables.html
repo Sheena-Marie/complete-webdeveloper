@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Changing Content</title>
+
+    <!-- jQuery -->
+    <script src="jquery-3.1.1.min.js"></script>
+    <link href="../jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script src="../jquery-ui-1.12.1/jquery-ui.js"></script>
+
+
+    <style type="text/css">
+
+    #draggable {
+        width: 150px;
+        height: 150px;
+        padding: 0.5em;
+    }
+
+    #resizable {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+
+    #also {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $('#draggable').draggable({ axis: 'y'});
+            $('span').draggable({ containment: 'parent'});
+        });
+
+        $(function() {
+            $('#resizable').resizable({
+                grid: 50,
+                alsoResize: '#also',
+                resize: function( event, ui ) {
+                    if($('#resizable').width() > 300) {
+                        alert('big enough');
+                    }
+            }
+            });
+            $('#also').resizable();
+        });
+
+    </script>
+
+    <div id="draggable" class="draggable ui-widget-content">
+        <span>Drag me around</span>
+    </div>
+
+    <div id="resizable" class="ui-widget-content">
+        <h3>Resizable</h3>
+    </div>
+
+    <div id="also" class="ui-widget-content">
+        <h3>Will also resize</h3>
+    </div>
+
+
+</body>
+
+</html>
